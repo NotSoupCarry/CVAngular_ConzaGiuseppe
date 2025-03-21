@@ -87,6 +87,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "*/",
+                "input": "src/app/assets",
+                "output": "/assets"
               }
             ],
             "styles": [
@@ -97,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "aecd0dee-d85a-4ed0-abc4-9999a46e280b"
   }
 }
