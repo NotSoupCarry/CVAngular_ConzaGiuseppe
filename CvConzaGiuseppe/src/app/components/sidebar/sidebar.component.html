@@ -1,39 +1,37 @@
-<div class="sidebar">
+<div class="sidebar" >
   <!-- Immagine Profilo -->
   <div class="profile">
-    <img src="https://it.wikifur.com/w/images/5/55/Duck-picture.jpg" alt="ConzaG" class="profile-img">
-    <p>Conza Giuseppe</p>
+    <img src="https://it.wikifur.com/w/images/5/55/Duck-picture.jpg" alt="ConzaG" class="profile-img" @imageAppear>
+    <h3 @fadeInUp>Conza Giuseppe</h3>
+    <p @fadeInUp>OOP developer</p> <br>
+    <a href="/" routerLinkActive="active" @imageAppear>Home</a>
   </div>
-
   <!-- Link ai Social -->
-  <ul class="social-links">
+  <ul class="social-links" @fadeInUp>
     <li>
-      <a href="https://github.com/NotSoupCarry" target="_blank">
+      <a href="https://github.com/NotSoupCarry" target="_blank" style="text-decoration: none;">
         <i class="fab fa-github"></i>
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/giuseppeconza/" target="_blank">
-        <i class="fab fa-linkedin"></i> 
+      <a href="https://www.linkedin.com/in/giuseppeconza/" target="_blank" style="text-decoration: none;">
+        <i class="fab fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a href="mailto:conzagiuseppee@gmail.com">
+      <a href="mailto:conzagiuseppee@gmail.com" style="text-decoration: none;">
         <i class="fa-solid fa-envelope"></i>
       </a>
     </li>
   </ul>
 
   <!-- Link alle Pagine -->
-  <ul class="navigation-links">
+  <ul class="social-links" @imageAppear>
     <li>
-      <a href="/" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
     </li>
     <li>
-      <a href="/about" routerLinkActive="active">About</a>
-    </li>
-    <li>
-      <a href="/experiences" routerLinkActive="active">Esperienze</a>
+      <a routerLink="/experiences" routerLinkActive="active">Esperienze</a>
     </li>
   </ul>
 </div>
